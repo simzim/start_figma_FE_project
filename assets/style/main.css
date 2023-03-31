@@ -1,0 +1,121 @@
+@import './base.css';
+
+/* 
+-------------------------
+header section
+------------------------- 
+*/
+
+.header {
+    min-height: 120px;
+    padding: 35px 0;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_list{
+    display: flex;
+}
+
+.list_item {
+    margin-left: 30px;
+}
+.list_link{
+    color: var(--white);
+    font-size: 20px;
+    padding: 10px 0;
+    transition: all 1s;
+}
+
+.list_link:hover{
+    color: var(--orange);
+   
+}
+
+/* 
+-------------------------
+hero section
+------------------------- 
+*/
+
+.hero {
+    min-height: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    color: var(--white);
+}
+
+.hero_text {
+    padding-top: 42px;
+    /* leidžiam elementui augti */
+    flex-grow: 1;
+    /* Kiek leisim spaustis elementui */
+    flex-basis: 300px;
+    /* jei reikia, kad elementas nebūtų didesnis negu... */
+    max-width: 415px;
+    /* leidžiam elementui spaustis */
+    flex-shrink: 1;
+    
+}
+.hero_img {
+    /* leidžiam elementui augti */
+    flex-grow: 1;
+    /* Kiek leisim spaustis elementui */
+    flex-basis: 410px;
+    /* jei reikia, kad elementas nebūtų didesnis negu... */
+    max-width: 645px;
+    flex-shrink: 1;
+  
+}
+
+.hero_img img{
+    width: 100%;
+}
+
+/* 
+-------------------------
+partners section
+------------------------- 
+*/
+
+.partners {
+    padding: 60px 20px;
+    text-align: center;
+}
+.partners_title {
+    max-width: 411px;
+    margin: 0 auto;
+}
+.title_description{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.partners_logo {
+    margin: 55px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:60px;
+    justify-content: center;
+}
+
+/* 
+-------------------------
+media
+------------------------- 
+*/
+
+@media screen and (max-width: 749px) {
+    .menu {
+      display: none;
+    }
+
+    .hero {
+        justify-content: center;
+    }
+  }

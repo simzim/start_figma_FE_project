@@ -1,0 +1,95 @@
+/* 
+main title
+font-family: 'Crimson Text', serif;
+other text paragraph, btn, 
+font-family: 'Work Sans', sans-serif; 
+
+*/
+
+:root {
+    --green: #74C69D;
+    --white: #fff;
+    --black: #000;
+    --orange: #FAAD3A;
+}
+
+body, 
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif; 
+}
+
+.container {
+    max-width: 1225px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.full_bg{
+    width: 100%;
+    background-color: var(--green);
+}
+
+h1, h2 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    padding: 15px 0;
+}
+
+h3 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 125%;
+    font-size: 16px;
+}
+
+.font_green{
+    color: var(--green);
+}
+
+p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 125%;
+}
+
+.btn{
+    display: inline-block;
+    width: 170px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin: 25px 0;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.btn_wh {
+    background-color: var(--white);
+    color: var(--black);    
+}
+.btn_bl {
+    background-color: var(--black);
+    color: var(--white);    
+}
+
+.btn_wh:hover, 
+.btn_bl:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
