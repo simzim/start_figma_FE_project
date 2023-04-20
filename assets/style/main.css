@@ -37,6 +37,8 @@ header section
    
 }
 
+/* mobile menu */
+
 .menu_mobile {
     display: none;
 
@@ -51,11 +53,6 @@ header section
     position: absolute;
     right: 0;
     top: 11%;
-    transition: all 0.2s ease-out;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
   }
   .menu_mobile .mobile_nav .mobile_list {
     background: var(--main);
@@ -75,15 +72,14 @@ header section
     font-size: 20px;
     line-height: 150%;
   }
-  
-  
+ .menu_mobile .mobile_nav .mobile_list li a:hover {
+    color: var(--action);
+    font-weight: 700;
+  }
+
   header .menu_mobile .show {
     display: block;
   }
-
-
-
-
 
 /* 
 -------------------------

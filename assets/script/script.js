@@ -13,3 +13,4 @@ mobileNav.addEventListener('click', veiksmas =>{
             .classList
             .remove('show');
 })
+
