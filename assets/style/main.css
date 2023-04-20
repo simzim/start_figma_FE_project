@@ -16,6 +16,7 @@ header section
     justify-content: space-between;
     align-items: center;
 }
+
 .nav_list{
     display: flex;
 }
@@ -23,6 +24,7 @@ header section
 .list_item {
     margin-left: 30px;
 }
+
 .list_link{
     color: var(--white);
     font-size: 20px;
@@ -31,9 +33,57 @@ header section
 }
 
 .list_link:hover{
-    color: var(--orange);
+    color: var(--action);
    
 }
+
+.menu_mobile {
+    display: none;
+
+  }
+  .mobile_icon {
+    cursor: pointer;
+  }
+
+  header .menu_mobile .mobile_nav {
+    width: 100vw;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 11%;
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+  }
+  .menu_mobile .mobile_nav .mobile_list {
+    background: var(--main);
+    opacity: 0.9;
+    z-index: 9999;
+    position: relative;
+  }
+  header .menu_mobile .mobile_nav .mobile_list li {
+    text-align: center;
+    border-bottom: 1px solid var(--action);
+  }
+  header .menu_mobile .mobile_nav .mobile_list li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 8px;
+    color: var(--white);
+    font-size: 20px;
+    line-height: 150%;
+  }
+  
+  
+  header .menu_mobile .show {
+    display: block;
+  }
+
+
+
+
 
 /* 
 -------------------------
@@ -60,8 +110,8 @@ hero section
     max-width: 415px;
     /* leidžiam elementui spaustis */
     flex-shrink: 1;
-    
 }
+
 .hero_img {
     /* leidžiam elementui augti */
     flex-grow: 1;
@@ -70,7 +120,6 @@ hero section
     /* jei reikia, kad elementas nebūtų didesnis negu... */
     max-width: 645px;
     flex-shrink: 1;
-  
 }
 
 .hero_img img{
@@ -83,14 +132,16 @@ partners section
 ------------------------- 
 */
 
-.partners {
+.partners, .team {
     padding: 60px 20px;
     text-align: center;
 }
-.partners_title {
+
+.title {
     max-width: 411px;
     margin: 0 auto;
 }
+
 .title_description{
     font-size: 20px;
     line-height: 25px;
@@ -104,6 +155,136 @@ partners section
     justify-content: center;
 }
 
+.partners_logo img:hover{
+    transform: scale(1.1);
+}
+
+/* 
+-------------------------
+meeting section
+------------------------- 
+*/
+
+.two_col {
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_col{
+    max-width: 600px;
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.img_col img{
+    width: 100%;
+}
+
+.text_col {
+    /*teksto blokas nebus didesnis negu 470px*/
+    max-width: 470px;
+    /* leidžiam spaustis iki 300px pločio  */
+    flex-basis: 300px;
+    /* leidimas augti užimti laisva vieta (šiuo atveju iki nurodyto max-width)*/
+    flex-grow: 1;
+    margin: 30px 20px;
+}
+
+/* 
+-------------------------
+creative section
+------------------------- 
+*/
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* 
+-------------------------
+talents section
+------------------------- 
+*/
+
+.members_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    margin: 45px 0;
+}
+
+.member_item {
+    min-width: 252px;
+    height: 299px;
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 20px 39px;
+    color: var(--dark);
+}
+
+.member_item:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+.member_item:hover .member_img{
+    border: 1px solid var(--action);
+}
+
+.member_img{
+max-width: 175px;
+max-height: 175px;
+border: 1px solid var(--dark);
+border-radius: 50%;
+overflow: hidden;
+padding-top: 14px;
+margin: 0 auto;
+}
+
+.member_name {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.member_name h4{
+    padding-bottom: 17px;
+}
+
+/* 
+-------------------------
+footer section
+------------------------- 
+*/
+
+.footer {
+    width: 100%;
+    min-height: 125px;
+    background-color: var(--main);
+    color: var(--white);
+    font-size: 20px;
+
+}
+
+.footer_content {
+    display: flex;
+    min-height: inherit;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_link {
+    padding: 5px;
+    margin: 0 5px;
+}
+.social_link:hover {
+    filter: invert(27%) sepia(51%) saturate(2000%);
+}
+
 /* 
 -------------------------
 media
@@ -111,11 +292,24 @@ media
 */
 
 @media screen and (max-width: 749px) {
+    h2{
+     font-size: 24px;
+    }
     .menu {
       display: none;
     }
-
+    .menu_mobile{
+        display: block;
+    }
     .hero {
+        justify-content: center;
+    }
+    .two_col {
+        justify-content: center;
+    }
+    .footer_content {
+        flex-direction: column;
+        gap: 10px;
         justify-content: center;
     }
   }

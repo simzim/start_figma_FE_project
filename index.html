@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start project</title>
-    
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <!-- style -->
     <link rel="stylesheet" href="./assets/style/main.css">
 
 </head>
+
 <body>
     <header class="full_bg header">
         <div class="container header_nav">
@@ -31,45 +35,189 @@
                     <li class="list_item"><a class="list_link" href="#">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- mobile menu -->
+            <div class="menu_mobile">
+                <div id="mobile-icon" class="mobile_icon">
+                  <img src="./assets/img/hamburger.svg" />
+                </div>
+                <div class="mobile_nav">
+                  <nav>
+                    <ul class="mobile_list">
+                      <li>
+                        <a href="#">Home</a>
+                      </li>
+                      <li>
+                        <a href="#">Portfolio</a>
+                      </li>
+                      <li>
+                        <a href="#">Services</a>
+                      </li>
+                      <li>
+                        <a href="#">Contact</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
         </div>
     </header>
 
     <main>
+        <!-- 
+            **************
+            hero section 
+            **************
+        -->
         <section class="full_bg">
             <div class="container hero">
-               <div class="hero_text">
+                <div class="hero_text">
                     <h3>Welcome</h3>
                     <h1>Lorem ipsum dolor sit amet consectetur</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor
+                        aperiam nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
                     <a class="btn btn_wh" href="#">Explore</a>
                 </div>
-               <div class="hero_img">
+                <div class="hero_img">
                     <img src="./assets/img/hero_img.svg" alt="hero image">
-               </div>
+                </div>
             </div>
         </section>
 
+        <!-- 
+            **************
+            partners section 
+            **************
+        -->
+
         <section class="partners container">
-                <div class="partners_title">
-                    <h3 class="font_green">Partners</h3>
-                    <h2>Lorem Ipsum Dolor</h2>
-                    <p class="title_description">Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit.</p>
-                </div>
-                <div class="partners_logo">
-                    <a href="#"><img src="./assets/img/logo_google.svg" alt="partners logo"></a>
-                    <a href="#"><img src="./assets/img/logo_microsoft.svg" alt="partners logo"></a>
-                    <a href="#"><img src="./assets/img/logo_air.svg" alt="partners logo"></a>
-                    <a href="#"><img src="./assets/img/logo_fb.svg" alt="partners logo"></a>
-                    <a href="#"><img src="./assets/img/logo_spot.svg" alt="partners logo"></a>
-                </div>
+            <div class="title">
+                <h3 class="font_green">Partners</h3>
+                <h2>Lorem Ipsum Dolor</h2>
+                <p class="title_description">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit.</p>
+            </div>
+            <div class="partners_logo">
+                <a href="#"><img src="./assets/img/partners/logo_google.svg" alt="partners logo"></a>
+                <a href="#"><img src="./assets/img/partners/logo_microsoft.svg" alt="partners logo"></a>
+                <a href="#"><img src="./assets/img/partners/logo_air.svg" alt="partners logo"></a>
+                <a href="#"><img src="./assets/img/partners/logo_fb.svg" alt="partners logo"></a>
+                <a href="#"><img src="./assets/img/partners/logo_spot.svg" alt="partners logo"></a>
+            </div>
+            <a class="btn btn_bl" href="#">Learn more</a>
+        </section>
+
+        <!-- 
+            **************
+            meeting section 
+            **************
+        -->
+        <section class="two_col container">
+            <div class="img_col">
+                <img src="./assets/img/meeting.svg" alt="meeting section image">
+            </div>
+            <div class="text_col">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam
+                    nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
                 <a class="btn btn_bl" href="#">Learn more</a>
+            </div>
+        </section>
+
+        <!-- 
+            **************
+            creative section 
+            **************
+        -->
+        <section class="two_col reverse container">
+            <div class="img_col">
+                <img src="./assets/img/creative.svg" alt="creative section image">
+            </div>
+            <div class="text_col">
+                <h2>Lorem ipsum dolor sit amet consectetur</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nemo hic quos, ab, dolor aperiam
+                    nobis cum est eos error ipsum, voluptate culpa nesciunt delectus iste?</p>
+                <a class="btn btn_bl" href="#">Learn more</a>
+            </div>
+        </section>
+        <!-- 
+            **************
+            talents section 
+            ************** 
+        -->
+        <section class="team container">
+            <div class="title">
+                <h3 class="font_green">Team</h3>
+                <h2>Our Talents</h2>
+                <p class="title_description">Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,</p>
+            </div>
+            <div class="members_block">
+
+                <a class="member_item" href="#">
+                    <div class="member_img">
+                        <img src="./assets/img/team/1_peg.svg" alt="team member">
+                    </div>
+                    <div class="member_name">
+                        <h4>Peg Legge</h4>
+                        <p>ceo</p>
+                    </div>
+                </a>
+
+                <a class="member_item" href="#">
+                    <div class="member_img">
+                        <img src="./assets/img/team/2_richard.svg" alt="team member">
+                    </div>
+                    <div class="member_name">
+                        <h4>Richard Guerra</h4>
+                        <p>ceo</p>
+                    </div>
+                </a>
+
+                <a class="member_item" href="#">
+                    <div class="member_img">
+                        <img src="./assets/img/team/3_alexandra.svg" alt="team member">
+                    </div>
+                    <div class="member_name">
+                        <h4>Alexandra Stolz</h4>
+                        <p>Designer</p>
+                    </div>
+                </a>
+
+                <a class="member_item" href="#">
+                    <div class="member_img">
+                        <img src="./assets/img/team/4_janet.svg" alt="team member">
+                    </div>
+                    <div class="member_name">
+                        <h4>Janet Bray</h4>
+                        <p>Developer</p>
+                    </div>
+                </a>
+            </div>
+            <a class="btn btn_bl" href="#">View Team</a>
         </section>
     </main>
+        <!-- 
+            **************
+            footer section 
+            ************** 
+        -->
+    <footer class="footer">
+        <div class="container footer_content">
+            <div class="social_block">
+                <a class="social_link" href="#"><img src="./assets/img/social/fb.svg" alt="social icon"></a>
+                <a class="social_link" href="#"><img src="./assets/img/social/ig.svg" alt="social icon"></a>
+                <a class="social_link" href="#"><img src="./assets/img/social/tw.svg" alt="social icon"></a>
+                <a class="social_link" href="#"><img src="./assets/img/social/pin.svg" alt="social icon"></a>
+                <a class="social_link" href="#"><img src="./assets/img/social/tik.svg" alt="social icon"></a>
+                <a class="social_link" href="#"><img src="./assets/img/social/vib.svg" alt="social icon"></a>
+                <a class="social_link" href="#"><img src="./assets/img/social/you.svg" alt="social icon"></a>  
+            </div>
+            <div class="rights_block">
+                &copy; Start, 2023. All rights reserved
+            </div>
 
-    <footer>
-
+        </div>
     </footer>
-    
+    <script defer src="./assets/script/script.js"></script>
 </body>
+
 </html>
